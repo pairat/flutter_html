@@ -198,8 +198,7 @@ class _HtmlParserState extends State<HtmlParser> {
       name: '[Tree Root]',
       children: [],
       node: widget.htmlData,
-      style: Style.fromTextStyle(DefaultTextStyle.of(context)
-          .style), //TODO this was Theme.of(context).textTheme.bodyText2!. Compare.
+      style: Style.fromTextStyle(Theme.of(context).textTheme.bodyLarge!), //TODO this was Theme.of(context).textTheme.bodyText2!. Compare.
     );
 
     for (var node in widget.htmlData.nodes) {
